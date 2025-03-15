@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="title">
+        <h1>Introduction to CSS</h1>
+    </header>
+
+    <!-- Add an ordered list with roman numerals -->
+    <section>
+        <h2>Ordered list (Roman numerals)</h2>
+        <ol type="i" id="list">
+            <li>Multimedia</li>
+            <li>Form</li>
+            <li>Attributes</li>
+            <li>Validation</li>
+            <li>AI Prompts</li>
+        </ol>
+    </section>
+
+    <!-- Add an external image from pexels.com -->
+    <section>
+        <h2>External image</h2>
+        <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg" alt="Data codes through eyeglasses" width="500">
+    </section>
+
+    <!-- Add a table of 5 contacts with; name, address, mobile and emails -->
+    <section>
+        <h2>Table of contacts</h2>
+        <table class="contacts">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Kenyatta Avenue, Nairobi</td>
+                    <td>+254 712 345 678</td>
+                    <td>johndoe@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>Moi Road, Mombasa</td>
+                    <td>+254 722 987 654</td>
+                    <td>jane.smith@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Lee</td>
+                    <td>Oginga Odinga Street, Kisumu</td>
+                    <td>+254 733 555 123</td>
+                    <td>david.lee@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Njeri</td>
+                    <td>Nakuru Town Centre, Nakuru</td>
+                    <td>+254 700 111 222</td>
+                    <td>emily.njeri@example.com</td>
+                </tr>
+                <tr>
+                    <td>Michael Main</td>
+                    <td>Eldoret Town, Eldoret</td>
+                    <td>+254 799 444 555</td>
+                    <td>michael.maina@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Add a registration form -->
+    <section>
+        <h2>Registration form</h2>
+        <form action="" method="post">            
+            <div class="form-group">
+                <!-- Name field -->
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <!-- Email -->
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <!-- Password -->
+                <div>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <!-- Date -->
+                <div>
+                    <label for="dob">Date of birth: </label>
+                    <input type="date" name="dob" id="dob" required>
+                </div>
+            </div>
+            
+            <!-- Country - dropdowns -->
+            <div id="country">
+                <label for="country">Country</label>
+                <select name="country" id="country" required>
+                    <option value="">Select country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="uganda">Uganda</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="rwanda">Ethiopia</option>
+                    <option value="south sudan">South Sudan</option>
+                    <option value="somalia">Somalia</option>
+                </select>
+            </div>
+            <!-- Gender - radio buttons -->
+            <div id="gender">
+                <label for="gender">Gender</label>
+                <label for=""><input type="radio" name="gender" value="male" required>Male</label>
+                <label for=""><input type="radio" name="gender" value="female" required>Female</label>
+                <label for=""><input type="radio" name="gender" value="other" required>Other</label>
+            </div>
+            <!-- Interests -->
+            <div id="interests">
+                <label for="interests">Interests</label>
+                <label><input type="checkbox" name="interests" value="coding"> Programming</label>
+                <label><input type="checkbox" name="interests" value="design"> Web Design</label>
+                <label><input type="checkbox" name="interests" value="music"> Music</label>
+            </div>
+
+            <!-- Submit button -->
+            <div id="submit">
+                <button type="submit">Register</button>
+            </div>         
+        </form>
+    </section>
+</body>
+</html>

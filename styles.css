@@ -1,0 +1,104 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/*header*/
+header {
+    background: #012215;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1, h2 {
+    margin: 0.5rem 0;
+    text-align: center;
+    border-bottom: 2px solid #012215;
+}
+
+section {
+    margin: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ordered list styles */
+ol#list {
+    padding-left: 1.5rem;
+}
+
+/* Image  */
+img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact Table  */
+table.contacts {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+table.contacts th, table.contacts td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table.contacts th {
+    background: #012215;
+    color: #fff;
+}
+
+/* Registration form  */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#country, #gender, #interests {
+    margin-bottom: 1rem;
+}
+
+/* Register button */
+#submit {
+    text-align: center;
+}
+
+#submit button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #075232;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit button:hover {
+    background: #022b1a;
+}
